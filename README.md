@@ -55,7 +55,7 @@ All you need to do next is select ‘dph+ Windows -> Color Windows by Energy Bal
 
 ![10_Heatmap](https://github.com/user-attachments/assets/cbd7ad92-3ff9-4e3f-a34b-635733038265)
 
-### Download: 
+### Download: [bt_dphPlus_windows.rbz](https://github.com/PH-Tools/dph-plus-windows/blob/main/build/bt_dphPlus_windows.rbz)
 
 Unzip the above file and simply add the unzipped contents (file ‘btdPHPluswindows_Load.rb‘ and folder ‘btdphPluswindows‘) to your Sketchup ‘Plugins’ directory (ie: on mac OS: …/Library/Application Support/Sketchup 2019/Sketchup/Plugins…)
 

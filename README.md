@@ -1,3 +1,5 @@
+Note: big thanks to [Sustainable Engineering Ltd NZ](https://sustainableengineering.co.nz/) for getting this plugin to work with the latest version if DesignPH! 
+
 ## Visualizing Windows and PHPP Energy Balance in Sketchup
 [https://passivehouseaccelerator.com/articles/visualizing-phpp-window-energy-balance-data-in-sketchup](https://passivehouseaccelerator.com/articles/visualizing-phpp-window-energy-balance-data-in-sketchup)
 

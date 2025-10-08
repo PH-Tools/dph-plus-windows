@@ -20,6 +20,8 @@ To that end, we will modify the base PHPP file with these supplemental calculati
 
 Of course here you can use Excel’s built-in ‘Conditional Formatting’ to apply simple heat-map gradient coloring to the net energy values (see columns JQ and JR above). This is useful for a quick error check review, though for presentation purposes still not very useful. This data, though, can serve as the basis for our Sketchup visualizations. If we can pull this data from excel into a simplified .CSV file (using simple copy/paste, or of course you could build a more ‘automatic’ exporter to pull the data and format it if you were going to be doing this over and over many times during a project) we can then bring it into our Sketchup scene for use by later tools.
 
+![3_Window_Net](https://github.com/user-attachments/assets/ef4ef807-1fae-4c7a-87aa-fed82562def4)
+
 Note that in the above excel PHPP model, we keep the window names along with the window net-energy balance data. Assuming our DesignPH window’s are named the same — we’ll use that identifier to apply the data here back to the Sketchup model.
 
 ### Sketchup Plugin Workflow
@@ -28,9 +30,15 @@ The Sketchup workflow actually has two steps. First we’ll import this data fro
 
 If the plugin is installed correctly, you should now have a new item in Sketchup’s ‘Window’ menu called ‘dPH+ Windows’ — within that new menu you’ll find an ‘import’ tool called ‘Load Window CSV from PHPP’ — if you select this you’ll be prompted to locate the .CSV file we prepared above using your system’s normal browser file dialog window.
 
+![4_Plugin](https://github.com/user-attachments/assets/dd43a98e-9ac0-4e11-9208-45b50da35926)
+
 It’ll ask you how you’ve set up the data and which column corresponds to the summer data and which the winter data. If you’ve set up your data as I have above, the winter data is in column #1, and the summer data in column #2 (column #0 should be the window names)
 
+![5_Plugin](https://github.com/user-attachments/assets/ac7bf5d8-9fc3-4aeb-9016-19ffd24114bc)
+
 This now takes the data and applies it to the model. It’ll scrub through all the DesignPH objects, find the windows and using the window’s name, it’ll match to the imported .CSV data and add that kWh result from PHPP to the component’s definition in the Sketchup scene. If you open up the ‘Component Attributes’ in Sketchup and navigate to any DesignPH window, you’ll see two new bits of data have been added:
+
+![6_Attribute_Data](https://github.com/user-attachments/assets/dad8931c-4678-49bc-accd-333c02a2d0f6)
 
 The data here is a net energy ‘loss’ — meaning that a negative loss = a gain. So in the above example, the window has a net gain of 82.9 kWh in summer, and a net gain of 17.4 kWh in winter, according to PHPP.
 
@@ -38,7 +46,15 @@ This data is now embedded in the Sketchup model. You don’t have to load the CS
 
 All you need to do next is select ‘dph+ Windows -> Color Windows by Energy Balance’ from the menu, and the desired time-period (winter / summer) as well as the upper and lower limits for the color-gradient.
 
-### Download:
+![7_Plugin](https://github.com/user-attachments/assets/536d65d3-06dc-4ae4-ae45-9d45d1bafee0)
+
+![8_Plugin](https://github.com/user-attachments/assets/858116ec-7703-4157-897d-0347bd508260)
+
+![9_Plugin](https://github.com/user-attachments/assets/738282f9-ef64-4e8a-9221-ef282656765b)
+
+![10_Heatmap](https://github.com/user-attachments/assets/cbd7ad92-3ff9-4e3f-a34b-635733038265)
+
+### Download: 
 
 Unzip the above file and simply add the unzipped contents (file ‘btdPHPluswindows_Load.rb‘ and folder ‘btdphPluswindows‘) to your Sketchup ‘Plugins’ directory (ie: on mac OS: …/Library/Application Support/Sketchup 2019/Sketchup/Plugins…)
 

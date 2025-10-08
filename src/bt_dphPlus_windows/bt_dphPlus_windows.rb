@@ -15,7 +15,7 @@ Name:         bt_dphPlus_windows.rb
 Author:       Ed May, bldgtyp, llc, Updated by Sustainable Engineering Ltd NZ to work on any designPH version
 Description:  DesignPH Window Component Colorizor
 Usage:        menu Window → dPH+ Window
-Version:      2
+Version:      2.0.0
 Date:         Oct 6, 2025
 
 =end

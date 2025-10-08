@@ -1,4 +1,5 @@
 ## Visualizing Windows and PHPP Energy Balance in Sketchup
+[https://passivehouseaccelerator.com/articles/visualizing-phpp-window-energy-balance-data-in-sketchup](https://passivehouseaccelerator.com/articles/visualizing-phpp-window-energy-balance-data-in-sketchup)
 
 ![1_Header-1](https://github.com/user-attachments/assets/8ac624b4-682c-473b-9308-9205d71522ab)
 

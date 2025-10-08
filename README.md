@@ -1,3 +1,7 @@
+## Visualizing Windows and PHPP Energy Balance in Sketchup
+
+![1_Header-1](https://github.com/user-attachments/assets/8ac624b4-682c-473b-9308-9205d71522ab)
+
 In order to evaluate the performance of windows in a building energy model, it is often helpful to use simple graphical visualizations in order to make model data more ‘meaningful’ and comprehensible to the designer team. Through visualization techniques such as ‘heat maps,’ building performance data can be easy viewed and understood by members of the design team much quicker than if trying to read the raw data. These types of visuals are standard in most client reports we produce and also very useful as ‘error checking’ during the model build.
 
 Below I’ll demonstrate a simple workflow for using the PHPP (Passive House Planning Package) along with the DesignPH Sketchup Plugin to create a simple in-model visualization of building performance data. This feature is not standard to DesignPH and so we have created a small extension which can be added to Sketchup in order to accomplish this. If you’d like to use this extension you can find a download link at the bottom of the page here. Feel free to give it a try and let us know what you think and if it works for you.
@@ -11,6 +15,8 @@ PHPP, being an excel based modeling tool, can yield any number of useful evaluat
 In PHPP, by default this data is not shown for each window. While there is a bit of data calculated for each window for the winter period, for most North American climates we are equally interested in both the winter and summer periods. In addition, note that the ‘out of the box’ energy balance calculations in the ‘Window’ worksheet are approximations and should usually be supplemented with more detailed calculations.
 
 To that end, we will modify the base PHPP file with these supplemental calculations. Again, being excel, the PHPP is open to any number of add-ons / additional calculations which is very useful. Generally, in the ‘Windows’ worksheet, off to the right hand side we will add calculations for overall window heat loss and solar gain for both winter and summer seasons. The input data needed for these detailed calculations is all in the PHPP and simply needs to be collected together here to allow for the calculation.
+
+![2_Window_Net](https://github.com/user-attachments/assets/b5ee878e-ee80-46fd-891a-33c08cf87bfe)
 
 Of course here you can use Excel’s built-in ‘Conditional Formatting’ to apply simple heat-map gradient coloring to the net energy values (see columns JQ and JR above). This is useful for a quick error check review, though for presentation purposes still not very useful. This data, though, can serve as the basis for our Sketchup visualizations. If we can pull this data from excel into a simplified .CSV file (using simple copy/paste, or of course you could build a more ‘automatic’ exporter to pull the data and format it if you were going to be doing this over and over many times during a project) we can then bring it into our Sketchup scene for use by later tools.
 
